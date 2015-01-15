@@ -1,2 +1,1 @@
-# WebGLInsights.github.io
-Website for WebGL Insights
+Website for WebGL Insights: http://www.webglinsights.com/
