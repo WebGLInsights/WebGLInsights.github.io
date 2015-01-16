@@ -1,0 +1,146 @@
+body  
+{
+	margin:0px;
+	padding:0px;
+	background-color:#000000;
+	background-image:url(images/background.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-attachment:fixed;
+    font-family: Calibri, Helvetica;
+    text-align:justify;
+}
+/*
+body
+{
+	margin:0px;
+	padding:0px;
+	background-color:#000000;
+	background-image:url(background-14.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-attachment:fixed;
+	font-size:14px;
+	font-family:verdana;
+	min-height:1200px;
+    color:#402000;
+    overflow:auto;
+}
+*/
+div.page
+{
+	margin-top:8px;
+	margin-left:auto; 
+	margin-right:auto;
+	padding:64px;
+	width:640px;
+    background-color:#FFFFFF;
+	border-style:solid;
+	border-width:1px;
+	border-color:#000000;
+	text-align:justify;
+}
+
+img.title
+{
+	border-radius:8px;
+	border-style:solid;
+	border-width:0px;
+	border-color:#000000; 
+}
+
+h1{ 
+    font-family: Calibria;
+	color: #5482AB;
+}
+
+h2{ 
+    font-family: Calibria;
+	color: #5482AB;
+}
+
+p
+{
+    text-align:justify;     
+}
+
+a
+{
+    color:#5482AB;   
+}
+
+.amazon
+{
+    margin-left:8px;
+}
+
+.sitemap {
+    font-family: Calibria;
+    font-size: 75%;
+}
+
+.code {
+	font-family: "Courier New";
+}
+
+.replaceableCode {
+	font-family: "Courier New";
+    color: red;
+}
+
+tr.spaceUnder > td {
+    padding-bottom: 1em;
+}
+
+.bookTitle{ 
+    font-family: Calibria;
+	color: #5482AB;
+}
+
+.tipsAPI {
+    font-family: Calibria;
+    font-size: 75%;
+	color: #5482AB;
+}
+
+.sectionName {
+    font-family: Calibria;
+	font-weight:bold;
+	color: #5482AB;
+}
+    .sectionName p {
+        font-weight: normal;
+        font-size: 0.9em;
+        margin-top: 0;
+    }
+
+table#contributors {
+  border-collapse: collapse;
+}
+
+    /* zebra striping */
+    table#contributors tr:nth-child(odd) {
+      background-color: #eee;
+    }
+
+    table#contributors tr td {
+      padding: 0.7em;
+    }
+    
+a.amazon
+{
+    float:right;
+}
+
+.leftText
+{
+    text-align:left;
+}
+
+.glColor {
+	color: #5482AB;
+}
+
+.strikeout {
+    text-decoration: line-through;
+}
