@@ -51,12 +51,12 @@ img.title
 
 h1{ 
     font-family: Calibria;
-	color: #5482AB;
+	color: #990000;
 }
 
 h2{ 
     font-family: Calibria;
-	color: #5482AB;
+	color: #990000;
 }
 
 p
@@ -66,7 +66,7 @@ p
 
 a
 {
-    color:#5482AB;   
+    color:#990000;   
 }
 
 .amazon
@@ -94,19 +94,19 @@ tr.spaceUnder > td {
 
 .bookTitle{ 
     font-family: Calibria;
-	color: #5482AB;
+	color: #990000;
 }
 
 .tipsAPI {
     font-family: Calibria;
     font-size: 75%;
-	color: #5482AB;
+	color: #990000;
 }
 
 .sectionName {
     font-family: Calibria;
 	font-weight:bold;
-	color: #5482AB;
+	color: #990000;
 }
     .sectionName p {
         font-weight: normal;
@@ -138,7 +138,7 @@ a.amazon
 }
 
 .glColor {
-	color: #5482AB;
+	color: #990000;
 }
 
 .strikeout {
