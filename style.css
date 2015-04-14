@@ -10,23 +10,7 @@ body
     font-family: Calibri, Helvetica;
     text-align:justify;
 }
-/*
-body
-{
-	margin:0px;
-	padding:0px;
-	background-color:#000000;
-	background-image:url(background-14.jpg);
-	background-repeat:no-repeat;
-	background-position:center center;
-	background-attachment:fixed;
-	font-size:14px;
-	font-family:verdana;
-	min-height:1200px;
-    color:#402000;
-    overflow:auto;
-}
-*/
+
 div.page
 {
 	margin-top:8px;
@@ -108,24 +92,24 @@ tr.spaceUnder > td {
 	font-weight:bold;
 	color: #990000;
 }
-    .sectionName p {
-        font-weight: normal;
-        font-size: 0.9em;
-        margin-top: 0;
-    }
+.sectionName p {
+    font-weight: normal;
+    font-size: 0.9em;
+    margin-top: 0;
+}
 
 table#contributors {
   border-collapse: collapse;
 }
 
-    /* zebra striping */
-    table#contributors tr:nth-child(odd) {
-      background-color: #eee;
-    }
+/* zebra striping */
+table#contributors tr:nth-child(odd) {
+    background-color: #eee;
+}
 
-    table#contributors tr td {
-      padding: 0.7em;
-    }
+table#contributors tr td {
+    padding: 0.7em;
+}
     
 a.amazon
 {
