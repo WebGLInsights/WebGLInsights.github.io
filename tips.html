@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WebGL Insights</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style>
+li
+{
+	margin-bottom:8px;
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<a href="index.html"><img class="title" src="images/strip.png" width="639" height="140" alt="WebGL Insights" /></a>
+<table summary="" border="0" width="630">
+<tr align="center" class="sitemap">
+  <td><a href="cover.html">Cover</a></td>
+  <td><a href="toc.html">Table of Contents</a></td>
+  <td>Tips</td>
+  <td><a href="contributors.html">Contributors</a></td>
+  <td><a href="reviews.html">Reviews</a></td>
+  <td><a href="bibtex.html">BibTeX</a></td>
+  <td><a href="https://github.com/WebGLInsights/WebGLInsights-1">Code</a></td>
+  <td><a href="http://webglinsights.blogspot.com/">Blog</a></td>
+  <td><a href="TODO">Buy</a></td>
+</tr>
+</table>
+
+<h1>Tips</h1>
+
+<table summary="" border="0" width="639">
+<tr><td valign="top">
+
+<p>
+<span class="bookTitle">WebGL Insights</span> includes short tips that were assembled by the contributors.
+</p>
+
+<ul>
+<li><a href="http://webglreport.com/" target="_blank">WebGL Report</a> is a great way to get WebGL implementation details for the current browser, especially when debugging browser- or device-specific problems.</li>
+
+<li>For performance, avoid object allocation in the render loop. Reuse objects and arrays where possible, and avoid built-in array methods such as map and filter. Each new object creates more work for the Garbage Collector, and in some cases, GC pauses can freeze an application for multiple frames every few seconds.</li>
+
+<li>Save memory and improve performance by ensuring that contexts are created with the <span class="code">alpha</span>, <span class="code">depth</span>, <span class="code">stencil</span>, <span class="code">antialias</span>, and <span class="code">preserveDrawingBuffer</span> options set to false, unless otherwise needed. Note that <span class="code">alpha</span>, <span class="code">depth</span>, and <span class="code">antialias</span> are enabled by default and must be explicitly disabled.</li>
+
+<li>For performance, query attribute and uniform locations only at initialization.</li>
+
+<li>Int precision default qualifiers aren't the same between vertex and fragment shaders. This can lead to surprising visual differences when moving computation between each.</li>
+
+<li>For portability, keep space requirements of varyings and uniforms within the limits of the GLSL ES spec. Consider using <span class="code">vec4</span> variables instead of <span class="code">float</span> arrays, as they potentially allow for tighter packing. See A.7 in the GLSL ES spec.</li>
+
+<li>Non-power-of-two textures require linear or nearest filtering, and clamp-to-border or clamp-to-edge wrapping. Mipmap filtering and repeat wrapping are not supported.</li>
+
+<li>When we are using more than one draw buffer with the WEBGL_draw_buffers extension and we don't want to write to a given draw buffer, pass <span class="code">gl.NONE</span> to the draw buffers parameter list.</li>
+
+<li>We must always provide all color attachments that our framebuffer has. Always enable strict mode via the <span class="code">"use strict"</span> directive. It slightly alters JavaScript semantics so that many silent errors turn into runtime exceptions and can even help the browser better optimize our code.</li>
+
+<li>Code linters, like <a href="http://jshint.com/" target="_blank">JSHint</a>, are an invaluable tool for keeping JavaScript code clean and error free.</li>
+
+<li>Create new textures, rather than changing the dimensions or format of old ones. - Chapter 1</li>
+
+<li>Avoid use of <span class="code">gl.TRIANGLE_FAN</span>, as it may be emulated in software. - Chapter 1</li>
+
+<li>Flag buffer usage as <span class="code">gl.STATIC_DRAW</span> where appropriate, to allow browsers and drivers to make use of optimizations for static data. - Chapter 1</li>
+
+<li>Make sure that one of the array attributes is bound (using <span class="code">gl.bindAttribLocation</span>) to location 0. Otherwise, high overhead should be expected when running on non-ES OpenGL platforms such as Mac OS X and desktop Linux. - Chapter 2</li>
+
+<li>Pass data back and forth from Web Workers using transferable objects whenever possible. - Chapters 4 and 21</li>
+
+<li>Although typed arrays have performance advantages, using JS arrays in teaching allows students to write clearer JS code with the use of array methods. - Chapter 7</li>
+
+<li>Using <span class="code">mediump</span> precision in fragment shaders provides the widest device compatibility, but risks corrupted rendering if the shaders are not properly tested. - Chapter 8</li>
+
+<li>Using only <span class="code">highp</span> precision prevents corrupted rendering at the cost of losing some efficiency and device compatibility. Prefer <span class="code">highp</span>, especially in vertex shaders. - Chapter 8</li>
+
+<li>To test device compatibility of shaders that use <span class="code">mediump</span> or <span class="code">lowp</span> precision, it is possible to use software emulation of lower precision. Use the—emulate-shaderprecision flag in Chrome. - Chapter 8</li>
+
+<li>When using an <span class="code">RGB</span> framebuffer, always implement a fallback to <span class="code">RGBA</span> for when <span class="code">RGB</span> is not supported. Use <span class="code">gl.checkFramebufferStatus</span>. - Chapter 8</li>
+
+<li>To save a lot of API calls, use vertex array objects (VAOs) or interleave static vertex data. - Chapter 8</li>
+
+<li>For performance, do not update a uniform each frame; instead update it only when it changes. - Chapters 8, 10, and 17</li>
+
+<li>If shrinking the browser window results in massive speed gains, consider using a half-resolution framebuffer during mouse interaction. - Chapter 14</li>
+
+<li>Load time can be improved by amortizing slow tasks across several frames. - Chapter 14</li>
+
+<li>Be vigilant about using <span class="code">requestAnimationFrame</span> — ensure that most, if not all, of your WebGL work lives inside it. - Chapter 14</li>
+
+<li>The <span class="code">textureProj</span> GLSL function, <span class="code">vec4 color = textureProj(sampler, uv.xyw);</span>, can be simulated with <span class="code">vec4 color = texture(sampler, uv.xy/uv.w);</span> - Chapter 17</li>
+
+<li>Avoid using common text-based 3D data formats, such as Wavefront OBJ or COLLADA, for asset delivery. Instead, use formats optimized for the web, such as glTF or SRC. - Chapter 20</li>
+
+<li>Use OES_element_index_uint to draw large indexed models with a single draw call. - Chapter 21</li>
+
+<li>Smooth, cinematic camera transitions can be created by a cosine-based interpolation of the camera's position and orientation. Unlike nonlinear interpolation alternatives, the cosine interpolation is computationally cheap and easy to calculate. - Chapter 23</li>
+</ul>
+
+</td></tr>  
+</table>
+
+</div>
+</body>
+</html>
