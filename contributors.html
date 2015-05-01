@@ -3,30 +3,38 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>OpenGL Insights</title>
+<title>WebGL Insights</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62287147-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 <body>
 <div class="page">
 
-<a href="index.html"><img class="title" src="images/strip.png" width="639" height="140" alt="OpenGL Insights" /></a>
+<a href="index.html"><img class="title" src="images/strip.png" width="639" height="140" alt="WebGL Insights" /></a>
 <table summary="" border="0" width="630">
 <tr align="center" class="sitemap">
-<!--
+  <td><a href="index.html">Home</a></td>
   <td><a href="cover.html">Cover</a></td>
   <td><a href="toc.html">Table of Contents</a></td>
-  <td><a href="pipeline.html">Pipeline Map</a></td>
   <td><a href="tips.html">Tips</a></td>
   <td>Contributors</td>
   <td><a href="reviews.html">Reviews</a></td>
   <td><a href="bibtex.html">BibTeX</a></td>
-  <td><a href="errata.html">Errata</a></td>
-  <td><a href="https://github.com/OpenGLInsights/OpenGLInsightsCode">Code</a></td>
-  <td><a href="http://blog.openglinsights.com/">Blog</a></td>
-  <td><a href="http://www.amazon.com/gp/product/1439893764/ref=as_li_tf_il?ie=UTF8&camp=1789&creative=9325&creativeASIN=1439893764&linkCode=as2&tag=opeins-20">Buy</a></td>
--->
+  <td><a href="https://github.com/WebGLInsights/WebGLInsights-1">Code</a></td>
+  <td><a href="http://webglinsights.blogspot.com/">Blog</a></td>
+  <td><a href="http://www.amazon.com/gp/product/1498716075/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1498716075&linkCode=as2&tag=virtua06a-20&linkId=YQKMB2RHXIYRZKJ5">Buy</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=virtua06a-20&l=as2&o=1&a=1498716075" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></td>
 </tr>
 </table>
 
@@ -59,13 +67,13 @@ His primary research interests include medical image visualization and human-com
 <td>
 <p>
 <span style='font-weight:bold;'>Matthew Amato</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/matt_amato" target="_blank">@matt_amato</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Senior Software Architect, Analytical Graphics, Inc.<br />
 </p>
 <p>
-TODO: Bio
+Matthew Amato is a Senior Software Architect at <a href="http://www.agi.com" target="_blank">Analytical Graphics, Inc</a>.  He is also a co-founder of <a href="http://cesiumjs.org" target="_blank">Cesium</a>, an open-source WebGL globe and map engine, as well as the inventor of CZML, a JSON schema for time-dynamic geospatial visualization.
 </p>
 </td>
 </tr>
@@ -94,36 +102,17 @@ Ed's textbook, Interactive Computer Graphics, with Dave Shreiner is now in its s
 
 <!-- ====================================================================== -->
 
-<tr id="JesseBarker">
-<td valign="top"><img src="contributors/JesseBarker.png" width="128" alt="" /></td>
-<td>
-<p>
-<span style='font-weight:bold;'>Jesse Barker</span><br />
-TODO: Twitter or website link
-</p>
-<p>
-TODO: Title, Affiliation
-</p>
-<p>
-TODO: Bio
-</p>
-</td>
-</tr>
-
-<!-- ====================================================================== -->
-
 <tr id="JohannesBehr">
-<td valign="top"><img src="contributors/JohannesBehr.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/JohannesBehr.jpg" width="128" alt="" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Johannes Behr</span><br />
-TODO: Twitter or website link
 </p>
 <p>
-TODO: Title, Affiliation
+Head of VCST Department, Fraunhofer IGD
 </p>
 <p>
-TODO: Bio
+Dr. Johannes Behr received his PhD degree in 2005. His areas of interests are Virtual Reality, Real-Time Rendering, and 3D Interaction Techniques. Since 2005, Dr. Johannes Behr is working at the Fraunhofer Institut für Graphische Datenverarbeitung (IGD, Germany) and leads the <a href="http://www.igd.fraunhofer.de/vcst" target="_blank">VCST</a> group. Over the last 15 years, he contributed to the <a href="http://www.opensg.org" target="_blank">OpenSG</a>, <a href="http://www.instantreality.org" target="_blank">InstantReality</a> and <a href="http://www.x3dom.org" target="_blank">x3dom.org</a> projects.
 </p>
 </td>
 </tr>
@@ -149,17 +138,18 @@ Nicolas Belmonte is Staff Data Scientist and Technical Lead for Data Visualizati
 <!-- ====================================================================== -->
 
 <tr id="FlorianBosch">
-<td valign="top"><img src="contributors/FlorianBosch.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/FlorianBoesch.jpg" width="128" alt="" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Florian Bösch</span><br />
-TODO: Twitter or website link
+<a href="http://twitter.com/pyalot" target="_blank">@pyalot</a>&nbsp;&bullet;&nbsp;<a href="http://codeflow.org/" target="_blank">codeflow.org</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Freelance WebGL developer/consultant, Codeflow
 </p>
 <p>
-TODO: Bio
+After becoming a freelancer in 2008, Florian has specialized in WebGL services since 2011. He is servicing clients with WebGL related needs from a variety of industries.
+He is the maintainer <a href="http://webglstats.com" target="_blank">webglstats.com</a> and <a href="http://codeflow.org/" target="_blank">codeflow.org</a>.
 </p>
 </td>
 </tr>
@@ -171,13 +161,14 @@ TODO: Bio
 <td>
 <p>
 <span style='font-weight:bold;'>Nicholas Brancaccio</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/pastasfuture" target="_blank">@pastasfuture</a>&nbsp;&bullet;&nbsp;
+<a href="http://floored.com" target="_blank">Floored</a>&nbsp;
 </p>
 <p>
-TODO: Title, Affiliation
+Lead Graphics Engineer, Floored, Inc.
 </p>
 <p>
-TODO: Bio
+Nicholas (Rhode Island School of Design, BFA, Printmaking) spent his previous life getting poisoned by antique photographic chemistry, and arguing that video games are art. One fateful day, while dehydrated in the perilous jungles of New Hampshire, he came across an outcropping. "Water!" he exclaimed. Making haste, he dived in. But this wasn't water at all - it was an ocean of hungry triangles. Before he knew it, he was fully consumed. Some time later, he was spotted on the alabaster dunes of New York City, mumbling a single phrase: "Draw teapots." And so he did. He is currently at Floored, Inc, responsible for the core rendering technologies in their in-house engine: Luma.
 </p>
 </td>
 </tr>
@@ -188,24 +179,24 @@ TODO: Bio
 <td valign="top"><img src="contributors/DiegoCantor.jpg" width="128" alt="" /></td>
 <td>
 <p>
-<span style='font-weight:bold;'>Diego Cantor</span><br />
+<span style='font-weight:bold;'>Diego Cantor-Rivera</span><br />
 <a href="https://twitter.com/diegocantor" target="_blank">@diegocantor</a>&nbsp;&bullet;&nbsp;
 <a href="http://voxelent.com" target="_blank">Voxelent</a>&nbsp;&bullet;&nbsp;
-<a href="http://www.imaging.robarts.ca/petergrp/Research.com" target="_blank">VASST Lab</a>
+<a href="http://www.imaging.robarts.ca/petergrp/Research" target="_blank">VASST Lab</a>
 </p>
 <p>
 Software/Biomedical Engineer, Voxelent / VASST Lab
 </p>
 <p>
-Diego received his M.Eng. degree in Systems and Computer Engineering from <a href='http://uniandes.edu.co/'>Universidad de Los Andes</a> (Colombia), 
-and his Ph.D. in Biomedical Engineering from <a href='http://uwo.ca/'>Western University</a> (Canada). During his time as a student, he participated
-in the development of several medical imaging software projects at the biomedical imaging research laboratory <a href='http://www.creatis.insa-lyon.fr/site/'>CREATIS</a> in Lyon, France, 
-and at the <a href='http://aehrc.com/'>Australian E-Health Research Centre</a> in Brisbane, Australia.</p>
+Diego received his M.Eng. degree in Systems and Computer Engineering from <a href='http://uniandes.edu.co/' target="_blank">Universidad de Los Andes</a> (Colombia), 
+and his Ph.D. in Biomedical Engineering from <a href='http://uwo.ca/' target="_blank">Western University</a> (Canada). During his time as a student, he participated
+in the development of several medical imaging software projects at the biomedical imaging research laboratory <a href='http://www.creatis.insa-lyon.fr/site/' target="_blank">CREATIS</a> in Lyon, France, 
+and at the <a href='http://aehrc.com/' target="_blank">Australian E-Health Research Centre</a> in Brisbane, Australia.</p>
 <p>
 Diego is passionate about the adoption of emerging web technologies in the medical domain. 
-He developed the first WebGL model of a beating heart and the first WebGL cortical thickness map (2010) using <a href='http://voxelent.com'>Voxelent</a>, a
+He developed the first WebGL model of a beating heart and the first WebGL cortical thickness map (2010) using <a href='http://voxelent.com' target="_blank">Voxelent</a>, a
 WebGL library of his authorship. In 2012, he wrote the <i>WebGL Beginner's Guide</i> (Packt Publishing). 
-He currently works with the <a href="http://www.imaging.robarts.ca/petergrp/Research.com" target="_blank">Virtual Augmentation and Simulation for Surgery and Therapy (VASST) laboratory</a> in Canada, where he develops 
+He currently works with the <a href="http://www.imaging.robarts.ca/petergrp/Research" target="_blank">Virtual Augmentation and Simulation for Surgery and Therapy (VASST) laboratory</a> in Canada, where he develops 
 virtual environments for neurosurgical teaching and training.
 </p>
 </td>
@@ -218,13 +209,13 @@ virtual environments for neurosurgical teaching and training.
 <td>
 <p>
 <span style='font-weight:bold;'>Nicolas Capens</span><br />
-TODO: Twitter or website link
+<a href="http://twitter.com/c0d1f1ed" target="_blank">@c0d1f1ed</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Software Engineer, Google
 </p>
 <p>
-TODO: Bio
+Nicolas Capens is a member of Google's Chrome GPU team and a contributor to Android graphics tools. He is passionate about making 3D graphics more widely available and less restricted. His work on the <a href="https://code.google.com/p/angleproject/" target="_blank">ANGLE</a> project helped create reliable WebGL support for Chrome on Windows. As the lead developer of <a href="http://blog.chromium.org/2012/02/gpu-accelerating-2d-canvas-and-enabling.html" target="_blank">SwiftShader</a>, he enabled WebGL on systems with blacklisted GPUs or drivers. Through innovative multi-threading, wide vectorization, and dynamic code specialization he continues to drive the convergence between CPU and GPU capabilities. Nicolas received his MSci.Eng. degree in computer science from Ghent University in 2007.
 </p>
 </td>
 </tr>
@@ -272,32 +263,14 @@ Paul's experience ranges from C64 to Android's latest GPU. He made the first Ope
 <td>
 <p>
 <span style='font-weight:bold;'>Patrick Cozzi</span><br />
-<a href="https://twitter.com/pjcozzi" target="_blank">@pjcozzi</a>
+<a href="https://twitter.com/pjcozzi" target="_blank">@pjcozzi</a>&nbsp;&bullet;&nbsp;<a href="http://www.seas.upenn.edu/~pcozzi/" target="_blank">seas.upenn.edu/~pcozzi/</a>
 </p>
 <p>
 Principal Graphics Architect, Analytical Graphics, Inc.<br />
 Lecturer, University of Pennsylvania
 </p>
 <p>
-At Analytical Graphics, Inc. (AGI), Patrick leads the development of Cesium, an open-source WebGL virtual globe and map engine.  He is the editor of WebGL Insights, coeditor of OpenGL Insights, coauthor of 3D Engine Design for Virtual Globes, and a member of the editorial board for the Journal of Computer Graphics Techniques.  Patrick frequently presents at SIGGRAPH and contributes to other book series.  He is a member of Khronos and teaches GPU Programming and Architecture at the University of Pennsylvania, where he earned a master's degree in computer science.
-</p>
-</td>
-</tr>
-
-<!-- ====================================================================== -->
-
-<tr id="BenConstable">
-<td valign="top"><img src="contributors/BenConstable.png" width="128" alt="" /></td>
-<td>
-<p>
-<span style='font-weight:bold;'>Ben Constable</span><br />
-TODO: Twitter or website link
-</p>
-<p>
-TODO: Title, Affiliation
-</p>
-<p>
-TODO: Bio
+At Analytical Graphics, Inc. (AGI), Patrick leads the development of <a href="http://cesiumjs.org/" target="_blank">Cesium</a>, an open-source WebGL virtual globe and map engine.  He is the editor of WebGL Insights, coeditor of OpenGL Insights, coauthor of 3D Engine Design for Virtual Globes, and a member of the editorial board for the Journal of Computer Graphics Techniques.  Patrick frequently presents at SIGGRAPH and contributes to other book series.  He is a member of Khronos and teaches GPU Programming and Architecture at the University of Pennsylvania, where he earned a master's degree in computer science.
 </p>
 </td>
 </tr>
@@ -305,7 +278,7 @@ TODO: Bio
 <!-- ====================================================================== -->
 
 <tr id="NickDesaulniers">
-<td valign="top"><img src="contributors/NickDesaulniers.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/NickDesaulniers.jpg" width="128" alt="Nick Desaulniers" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Nick Desaulniers</span><br />
@@ -334,13 +307,19 @@ Rochester Institute of Technology and is an Eagle Scout.
 <td>
 <p>
 <span style='font-weight:bold;'>Matt DesLauriers</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/mattdesl" target="_blank">@mattdesl</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Creative Developer, Jam3
 </p>
 <p>
-TODO: Bio
+Matt DesLauriers is a self-taught graphics programmer who studied Film & Media at Queen's University.
+Working at Jam3 in Toronto, he combines his love of film, programming, and design to produce interactive
+content for the web.
+</p>
+<p>
+When he is not tinkering with WebGL and open-source modules, he might be found at a local espresso shop
+or rock climbing gym.
 </p>
 </td>
 </tr>
@@ -348,17 +327,23 @@ TODO: Bio
 <!-- ====================================================================== -->
 
 <tr id="ChrisDickinson">
-<td valign="top"><img src="contributors/ChrisDickinson.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/ChrisDickinson.jpg" width="128" alt="" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Chris Dickinson</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/isntitvacant" target="_blank">@isntitvacant</a>&nbsp;&bullet;&nbsp;<a href="http://neversaw.us/" target="_blank">http://neversaw.us/</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Node Core Contributor, Walmart Labs
 </p>
 <p>
-TODO: Bio
+Chris Dickinson serves as a core committer to the Node.js and io.js projects on behalf of Walmart Labs.
+He is passionate about open source, community-driven efforts to improve tooling, and writing parsers as
+a stress-relief mechanism.
+</p>
+<p>
+He is a maintainer of several projects within the <a href="http://stack.gl/" target="_blank">stack.gl</a>
+open source organization, which is committed to building reusable, pluggable tools for webgl.
 </p>
 </td>
 </tr>
@@ -388,13 +373,12 @@ Olli received his master's degree from Tampere University of Technology (TUT) in
 <td>
 <p>
 <span style='font-weight:bold;'>Lin Feng</span><br />
-TODO: Twitter or website link
 </p>
 <p>
-TODO: Title, Affiliation
+Associate Professor, School of Computer Engineering, Nanyang Technological University, Singapore
 </p>
 <p>
-TODO: Bio
+Dr. Lin Feng is currently an Associate Professor, the Director of Bioinfomatics Research Centre, and the Programme Director of MSc (Digital Media Technology) at the School of Computer Engineering, Nanyang Technological University. His research interest includes biomedical informatics, biomedical imaging and visualization, computer graphics, and high-performance computing. He has worked for more than 20 funded research projects since joining NTU and has published about 200 technical papers. He is a Senior Member of IEEE.
 </p>
 </td>
 </tr>
@@ -406,13 +390,13 @@ TODO: Bio
 <td>
 <p>
 <span style='font-weight:bold;'>David Galeano</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/davidgaleano" target="_blank">@davidgaleano</a>&nbsp;&bullet;&nbsp;<a href="http://www.turbulenz.biz/" target="_blank">www.turbulenz.biz</a>&nbsp;&bullet;&nbsp;<a href="http://ga.me/" target="_blank">ga.me</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Co-founder, Turbulenz Limited
 </p>
 <p>
-TODO: Bio
+As the co-founder of Turbulenz, David was directly involved in the creation of all the technology within the Turbulenz platform. Before creating Turbulenz in 2009, he spent eight years at Criterion Software as Senior Software Engineer working on RenderWare Graphics, and at Electronic Arts as Technical Director of EA's internal rendering technology group. David originally worked for six years developing games at Dinamic Multimedia in Spain.
 </p>
 </td>
 </tr>
@@ -420,17 +404,17 @@ TODO: Bio
 <!-- ====================================================================== -->
 
 <tr id="JeffGilbert">
-<td valign="top"><img src="contributors/JeffGilbert.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/JeffGilbert.jpg" width="128" alt="" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Jeff Gilbert</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/jedagil" target="_blank">@jedagil</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Software Engineer, Mozilla Corporation
 </p>
 <p>
-TODO: Bio
+Jeff is a software engineer at Mozilla, where he leads the WebGL implementation for Gecko. He was first introduced to graphics and software engineering by patching and hacking together modifications for computer games. Years later, Jeff is on the other side of the fence, working to help developers author and port 3D content into the browser with WebGL.
 </p>
 </td>
 </tr>
@@ -438,17 +422,16 @@ TODO: Bio
 <!-- ====================================================================== -->
 
 <tr id="BenoitJacob">
-<td valign="top"><img src="contributors/BenoitJacob.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/BenoitJacob.jpg" width="128" alt="" /></td>
 <td>
 <p>
-<span style='font-weight:bold;'>Benoit Jacob</span><br />
-TODO: Twitter or website link
+<span style='font-weight:bold;'>Benoit Jacob</span>
 </p>
 <p>
-TODO: Title, Affiliation
+Software Engineer, Google, formerly Mozilla
 </p>
 <p>
-TODO: Bio
+Until 2010, Benoit was a mathematician at Universities of Paris and Toronto, and in his spare time developed open-source numerical software, such as the <a href="http://eigen.tuxfamily.org" target="_blank">Eigen matrix library</a>. He then joined Mozilla as a software engineer, to work on browser engine graphics and WebGL. In late 2014, he joined Google, going back to working on numerical software and specifically Eigen.
 </p>
 </td>
 </tr>
@@ -474,17 +457,17 @@ Jacek is a Graphics Software Engineer at Intel and was previously a Research Fel
 <!-- ====================================================================== -->
 
 <tr id="BrandonJones">
-<td valign="top"><img src="contributors/BrandonJones.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/BrandonJones.jpg" width="128" alt="" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Brandon Jones</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/tojiro" target="_blank">@tojiro</a>&nbsp;&bullet;&nbsp;<a href="http://tojicode.com" target="_blank">http://tojicode.com</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Software Engineer, Google, Inc.
 </p>
 <p>
-TODO: Bio
+Brandon is a software engineer on the Google Chrome GPU team, and has been chasing computer graphics as a hobby since he was a kid. Along the way he was distracted by the siren's song of web development, and was overjoyed to find the two subjects collide in the form of WebGL.
 </p>
 </td>
 </tr>
@@ -492,17 +475,27 @@ TODO: Bio
 <!-- ====================================================================== -->
 
 <tr id="HughSKennedy">
-<td valign="top"><img src="contributors/HughSKennedy.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/HughSKennedy.jpg" width="128" alt="" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Hugh S. Kennedy</span><br />
-TODO: Twitter or website link
+<a href="http://twitter.com/hughskennedy" target="_blank">@hughskennedy</a>&nbsp;&bullet;&nbsp;<a href="http://hughsk.io" target="_blank">http://hughsk.io</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Untitled, NodeSource
 </p>
 <p>
-TODO: Bio
+Hugh is an Australian software developer with a background in data
+visualisation and installation art. He currently works for
+<a href="http://nodesource.com" target="_blank">NodeSource</a>, spending much of his time
+working on product development and design.
+</p>
+<p>
+He is one of the maintainers of
+<a target="_blank" href="http://stack.gl" target="_blank">stack.gl</a>,
+an open and modular software ecosystem for WebGL built on top of
+<a target="_blank" href="http://browserify.org/" target="_blank">browserify</a> and
+<a target="_blank" href="http://npmjs.com/" target="_blank">npm</a>.
 </p>
 </td>
 </tr>
@@ -521,12 +514,12 @@ Freelance pythonista
 </p>
 <p>
 After studying Electrical Engineering, Almar Klein did a PhD in medical
-image analysis. Working with dynamic CT data sparked an interest 
-in (3D) visualization, which resulted in the development of 
+image analysis. Working with dynamic CT data sparked an interest
+in (3D) visualization, which resulted in the development of
 <a href="https://code.google.com/p/visvis/" target="_blank">Visvis</a>. Currently,
 Almar is a core developer of <a href="http://vispy.org" target="_blank">Vispy</a>,
 and collaborating with <a href="http://continuum.io/" target="_blank">Continuum Analytics</a>
-to lower the barriers of (scientific) computing by building the next 
+to lower the barriers of (scientific) computing by building the next
 generation data analysis <a href="http://zoof.io" target="_blank">platform</a>.
 
 </p>
@@ -584,17 +577,17 @@ Max is also a PhD student at the Interactive Graphics Systems group (<a href="ht
 <!-- ====================================================================== -->
 
 <tr id="MikolaLysenko">
-<td valign="top"><img src="contributors/MikolaLysenko.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/MikolaLysenko.jpeg" width="128" alt="" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Mikola Lysenko</span><br />
-TODO: Twitter or website link
+<a href="http://twitter.com/mikolalysenko" target="_blank">@mikolalysenko</a>&nbsp;&bullet;&nbsp;<a href="http://0fps.net" target="_blank">0fps.net</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Freelance
 </p>
 <p>
-TODO: Bio
+Mikola Lysenko is a computer programmer with a background in computational geometry.  He specializes in computer aided design, data visualization, and GPU programming.  Some of his projects include work for <a href="http://www.3dsystems.com/" target="_blank">3D Systems</a> and <a href="http://plot.ly" target="_blank">plotly</a>.  Currently he is working on <a href="http://stack.gl" target="_blank">stack.gl</a>, which is a modular ecosystem for developing WebGL applications.  He also writes about geometry recreationally for the blog <a href="http://0fps.net" target="_blank">0fps</a>.
 </p>
 </td>
 </tr>
@@ -623,17 +616,17 @@ He joined the Blend4Web team in 2013 as a 3D engine programmer. He is responsibl
 <!-- ====================================================================== -->
 
 <tr id="ZhenyaoMo">
-<td valign="top"><img src="contributors/ZhenyaoMo.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/ZhenyaoMo.jpg" width="128" alt="" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Zhenyao Mo</span><br />
-TODO: Twitter or website link
+<a href="https://www.linkedin.com/in/zhenyao" target="_blank">https://www.linkedin.com/in/zhenyao</a><br />
 </p>
 <p>
-TODO: Title, Affiliation
+Software Engineer, Google Inc.
 </p>
 <p>
-TODO: Bio
+Zhenyao Mo received his PhD degree in Computer Science from University of Southern California. For the past five years, he has been part of Google's Chrome GPU team, implementing and perfecting WebGL. Although constantly craving to write the coolest WebGL app ever, he never gets the chance. He accepts that his role is to enable other developers to have fun with WebGL.
 </p>
 </td>
 </tr>
@@ -666,13 +659,23 @@ Dr. Movania has published several international conference and journal papers in
 <td>
 <p>
 <span style='font-weight:bold;'>Cedric Pinson</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/trigrou" target="_blank">@trigrou</a>
 </p>
 <p>
-TODO: Title, Affiliation
+CTO at Sketchfab
 </p>
 <p>
-TODO: Bio
+Cedric is the co-founder and CTO of Sketchfab — a platform for sharing 3D
+content online. A veteran of the game industry since 2001, he transitioned
+from a project leader in 3D client technology to launching his career as a
+freelance developer in 2008. Cedric's personal and freelance projects
+quickly led him to become a pioneer in WebGL technology. He developed
+OSG.JS — a framework implementing an OpenScenGraph-like toolbox to interact
+with WebGL via JavaScript. Using this technology, he focused on the creation
+of a real-time, online 3D viewer. Cedric's innovation was quickly embraced
+by the 3D community and morphed into Sketchfab — a TechStars alum and
+venture-capital backed company with over 15 employees in their New York and
+Paris offices.
 </p>
 </td>
 </tr>
@@ -684,13 +687,17 @@ TODO: Bio
 <td>
 <p>
 <span style='font-weight:bold;'>Philip Rideout</span><br />
-TODO: Twitter or website link
+<a href="http://twitter.com/prideout" target="_blank">@prideout</a>
+&nbsp;&bullet;&nbsp;
+<a href="http://prideout.net" target="_blank">http://prideout.net</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Senior Graphics Developer in Berkeley, CA
 </p>
 <p>
-TODO: Bio
+Philip helped build the industry's first GLSL compiler at 3Dlabs in the early 2000's.
+He is an alumnus of the developer tools team at NVIDIA, as well as Pixar's Research &amp; Development division.
+He first started dreaming about computer graphics after a high school field trip to Intergraph Corporation.
 </p>
 </td>
 </tr>
@@ -702,13 +709,16 @@ TODO: Bio
 <td>
 <p>
 <span style='font-weight:bold;'>Kevin Ring</span><br />
-TODO: Twitter or website link
+<a href="http://www.kotachrome.com/kevin" target="_blank">www.kotachrome.com/kevin</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Principal Software Engineer, National ICT Australia (NICTA)
 </p>
 <p>
-TODO: Bio
+Kevin recently moved halfway around the world to beautiful Sydney, Australia to help NICTA build <a href="https://github.com/NICTA/nationalmap" target="_blank">Australia's National Map</a> and to spend just a little bit too much time on the beach.
+</p>
+<p>
+Previously, Kevin co-authored the book <em>3D Engine Design for Virtual Globes</em> with Patrick Cozzi, which helped launch the development of <a href="http://cesiumjs.org" target="_blank">Cesium</a>, the open-source virtual globe for the web.  In between bouts of complaining about JavaScript, Kevin built Cesium's terrain and imagery rendering engine as well as a server-side tool to process hundreds of gigabytes of terrain data for efficient streaming to a web browser.
 </p>
 </td>
 </tr>
@@ -762,10 +772,10 @@ Dr. Cyrille Rossant is a research data scientist and software engineer in neuroi
 <a href="http://twitter.com/j3ffdr" target="_blank">@j3ffdr</a>&nbsp;&bullet;&nbsp;<a href="http://www.marmoset.co" target="_blank">marmoset.co</a>
 </p>
 <p>
-Engineer & Co-Founder, Marmoset
+Engineer &amp; Co-Founder, Marmoset
 </p>
 <p>
-As one of the founding members of Marmoset, Jeff has worked since 2012 on the company's technical foundation, focusing on graphics and engine development. 
+As one of the founding members of Marmoset, Jeff has worked since 2012 on the company's technical foundation, focusing on graphics and engine development. His attention these days is focused on creating real-time graphics tools for artists. Prior to this he has spent time in game development and virtual reality research.
 </p>
 </td>
 </tr>
@@ -773,17 +783,17 @@ As one of the founding members of Marmoset, Jeff has worked since 2012 on the co
 <!-- ====================================================================== -->
 
 <tr id="KennethRussell">
-<td valign="top"><img src="contributors/KennethRussell.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/KennethRussell.jpg" width="128" alt="" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Kenneth Russell</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/gfxprogrammer" target="_blank">@gfxprogrammer</a>&nbsp;&bullet;&nbsp;<a href="http://gfxprose.blogspot.com/" target="_blank">blog</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Software Engineer, Google, Inc.
 </p>
 <p>
-TODO: Bio
+Ken Russell is a software engineer on Chrome's GPU team at Google, Inc., and has been deeply interested in 3D graphics since taking his first college course on the topic. Among previous work he interned at Silicon Graphics working on the Cosmo Player VRML plugin, and co-founded Sun Microsystems' Java Bindings to the OpenGL API (JOGL) project. He currently serves as the chair of the WebGL working group.
 </p>
 </td>
 </tr>
@@ -795,7 +805,8 @@ TODO: Bio
 <td>
 <p>
 <span style='font-weight:bold;'>Tarek Sherif</span><br />
-<a href="http://tareksherif.ca" target="_blank">http://tareksherif.ca</a>
+<a href="https://twitter.com/thsherif" target="_blank">@thsherif</a>&nbsp;&bullet;&nbsp;
+<a href="http://tareksherif.net" target="_blank">http://tareksherif.net</a>
 </p>
 <p>
 3D Software Engineer, BioDigital
@@ -813,13 +824,12 @@ Tarek Sherif is a 3D Software Engineer at <a href="https://www.biodigital.com/" 
 <td>
 <p>
 <span style='font-weight:bold;'>Dave Shreiner</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/@DaveShreiner" target="_blank">@DaveShreiner</a>
 </p>
 <p>
-TODO: Title, Affiliation
+ACM/SIGGRAPH 2014 Conference Chair
 </p>
-<p>
-TODO: Bio
+<p>Dave has been working with OpenGL-related technologies for over 25 years.  From authoring the first commercial training course on OpenGL while at Silicon Graphics; to contributing to numerous books on computer graphics using OpenGL, OpenGL ES, and WebGL; and collaborating with Ed Angel to help a multitude of programmers hone their OpenGL-related skills, he’s been privileged to share his passion with thousands of developers.
 </p>
 </td>
 </tr>
@@ -831,13 +841,13 @@ TODO: Bio
 <td>
 <p>
 <span style='font-weight:bold;'>Christian Stein</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/_chrstein_" target="_blank">@_chrstein_</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Researcher, Fraunhofer IGD / TU Darmstadt
 </p>
 <p>
-TODO: Bio
+After collecting some industry experience as software engineer in game development alongside with his studies, Christian received his master's degree in computer science in 2014. In the VCST department of the <a href="http://www.igd.fraunhofer.de/en" target="_blank">Fraunhofer IGD</a>, he is responsible for web-based rendering technology. His research focuses on spatial data structures and large model rendering on the web.
 </p>
 </td>
 </tr>
@@ -848,14 +858,15 @@ TODO: Bio
 <td valign="top"><img src="contributors/MaikThoener.png" width="128" alt="" /></td>
 <td>
 <p>
-<span style='font-weight:bold;'>Maik Thoener</span><br />
-TODO: Twitter or website link
+<span style='font-weight:bold;'>Maik Thöner</span><br />
+<a href="https://twitter.com/mthoener" target="_blank">@mthoener</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Researcher, Fraunhofer IGD / TU Darmstadt
 </p>
 <p>
-TODO: Bio
+Maik is part of the Visual Computing System Technologies department of the <a href="http://www.igd.fraunhofer.de/en" target="_blank">Fraunhofer IGD</a>, where he is researching and developing web-based rendering systems for large models.
+His main research interests include virtual reality, 3D in the web, distributed rendering, and hybrid rendering. He received his master's degree in computer science from the TU Darmstadt.
 </p>
 </td>
 </tr>
@@ -863,17 +874,16 @@ TODO: Bio
 <!-- ====================================================================== -->
 
 <tr id="VladimirVukicevic">
-<td valign="top"><img src="contributors/VladimirVukicevic.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/VladimirVukicevic.jpg" width="128" alt="" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Vladimir Vukicevic</span><br />
-TODO: Twitter or website link
 </p>
 <p>
-TODO: Title, Affiliation
+Engineering Director, Mozilla
 </p>
 <p>
-TODO: Bio
+Vladimir has been working on Firefox and open web standards for over ten years.  During this time, he managed to successfully convince people that JavaScript and the Web would be fast enough for 3D graphics to happen in the browser, and WebGL was born.  He chaired the initial WebGL working group within Khronos up until the finalization of the WebGL 1.0 standard.  Since then, he has worked on graphics and performance problems with Firefox and Firefox OS, and helped bring high-end games to the Web via Emscripten and asm.js. Currently Vladimir is focused on bringing VR capabilities to the Web and in general making the Web competitive with native desktop and mobile platforms.
 </p>
 </td>
 </tr>
@@ -881,17 +891,17 @@ TODO: Bio
 <!-- ====================================================================== -->
 
 <tr id="ShannonWoods">
-<td valign="top"><img src="contributors/ShannonWoods.png" width="128" alt="" /></td>
+<td valign="top"><img src="contributors/shannonwoods.jpg" width="128" alt="" /></td>
 <td>
 <p>
 <span style='font-weight:bold;'>Shannon Woods</span><br />
-TODO: Twitter or website link
+<a href="https://twitter.com/ShannonIn3D" target="_blank">@ShannonIn3D</a>
 </p>
 <p>
-TODO: Title, Affiliation
+Software Engineer, Google
 </p>
 <p>
-TODO: Bio
+Shannon is the project lead for <a href="https://code.google.com/p/angleproject/" target="_blank">ANGLE</a>, an open-source graphics translation engine used by projects, from browsers to UI frameworks to mobile games, to execute OpenGL ES across many platforms. Prior to her current work with ANGLE, she explored other corners of the 3D graphics world, developing software for game portability and real-time distributed simulation. She is a graduate of the University of Maryland, and enjoys close specification analysis, music, and teapots.
 </p>
 </td>
 </tr>
